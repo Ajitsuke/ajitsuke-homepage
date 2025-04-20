@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Music - アジツケ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   html, body {
+      background-color: #000;
+      color: white;
+      font-family: "Hiragino Mincho ProN", "游明朝", "Yu Mincho", serif;
+      margin: 0;
+      padding: 0;
+      overscroll-behavior: none; /* ← 追加ここやで！ */
+    }
+
+    nav {
+      background-color: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p.note {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: -10px;
+    }
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .music-item {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .music-item h3 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    a.download-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+
+    .back-to-top {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 20px;
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 0.95em;
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #444;
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">TOP</a>
+    <a href="index.html#profile">Profile</a>
+    <a href="index.html#movie">Movie</a>
+    <a href="index.html#photo">Photo</a>
+    <a href="index.html#illust">Illust</a>
+    <a href="index.html#ai-music">Music</a>
+    <a href="index.html#blog">Blog</a>
+  </nav>
+
+  <section>
+    <h2>AI Music - 邦楽</h2>
+    <p class="note">
+        音楽生成AI Sunoで作成した楽曲です
+        <br>音源はChromeでのみダウンロードが可能です。右クリック→「リンク先を別名で保存」
+        <br>このサイトで出しているものに限り用途や商用、加工の有無を問わず、どなたでも無料でご利用いただけます。</p>
+    <div class="music-grid">
+      <div class="music-item"><h3>蒼の境界</h3><audio controls src="images/music/japan/aonokyoukai.mp3"></audio><a class="download-link" href="music/japan/aonokyoukai.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>セピア色の記憶</h3><audio controls src="images/music/japan/sepiaironokioku.mp3"></audio><a class="download-link" href="music/japan/sepiaironokioku.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>ブライトデイズ</h3><audio controls src="images/music/japan/buraitodeizu.mp3"></audio><a class="download-link" href="music/japan/buraitodeizu.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>フラグメント</h3><audio controls src="images/music/japan/furagument.mp3"></audio><a class="download-link" href="music/japan/furagument.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>ノスタルジア</h3><audio controls src="images/music/japan/nosutarujia.mp3"></audio><a class="download-link" href="music/japan/nosutarujia.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>群青</h3><audio controls src="images/music/japan/gunjyou.mp3"></audio><a class="download-link" href="music/japan/gunjyou.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>アイビーグリーン</h3><audio controls src="images/music/japan/aibi-guri-n.mp3"></audio><a class="download-link" href="music/japan/aibi-guri-n.mp3" download>ダウンロード</a></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>AI Music - 洋楽</h2>
+    <p class="note">
+        音楽生成AI Sunoで作成した楽曲です
+        <br>音源はChromeでのみダウンロードが可能です。右クリック→「リンク先を別名で保存」
+        <br>このサイトで出しているものに限り用途や商用、加工の有無を問わず、どなたでも無料でご利用いただけます。</p>
+    </p>
+
+    <div class="music-grid">
+      <div class="music-item"><h3>I My Me Mine</h3><audio controls src="images/music/yougaku/I My Me Mine.mp3"></audio><a class="download-link" href="music/yougaku/I My Me Mine.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>Ocean's Whisper</h3><audio controls src="images/music/yougaku/Ocean's Whisper.mp3"></audio><a class="download-link" href="music/yougaku/Ocean's Whisper.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>Lost Socks Saga</h3><audio controls src="images/music/yougaku/Lost Socks Saga.mp3"></audio><a class="download-link" href="music/yougaku/Lost Socks Saga.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>You Are Blue Sky</h3><audio controls src="images/music/yougaku/You Are Blue Sky.mp3"></audio><a class="download-link" href="music/yougaku/You Are Blue Sky.mp3" download>ダウンロード</a></div>
+      <div class="music-item"><h3>Morning</h3><audio controls src="images/music/yougaku/Morning.mp3"></audio><a class="download-link" href="music/yougaku/Morning.mp3" download>ダウンロード</a></div>
+    </div>
+  </section>
+
+  <a href="#top" class="back-to-top">▲ TOPに戻る</a>
+
+  <footer>
+    <p>© 2025 アジツケ All Rights Reserved.</p>
+    <p>
+        <a href="#top">TOP</a> ｜ <a href="#profile">Profile</a> ｜ <a href="#movie">Movie</a> ｜ <a href="#photo">Photo</a><br>
+        <a href="#illust">Illust</a> ｜ <a href="#ai-music">AI Music</a> ｜ <a href="#blog">Blog</a>
+    </p>
+  </footer>
+
+
+</body>
+</html>
+
